@@ -1,0 +1,124 @@
+/* General styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('18.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed; /* ล็อคพื้นหลัง */
+    flex-direction: column; /* สำหรับการเพิ่ม header */
+}
+
+/* Header styles */
+.header {
+    background-color: #feb7c9c0;
+    width: 100%;
+    padding: 5px 5px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.1);
+    position: fixed; /* เปิดการใช้งาน position: fixed */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+body {
+    padding-top: 20px; /* เพิ่มระยะห่างเท่ากับความสูงของ header */
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    height: 100px;
+}
+
+.logo-container span {
+    margin-right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    
+    
+}
+
+/* Main container */
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: #feb7c985;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 100px auto 20px; /* Adjusted margin for header */
+    overflow: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input and Button styles */
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #10B48E;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0da481;
+}
+
+/* Description styles */
+.description {
+    margin-top: 20px;
+}
+
+.description img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.description h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #444;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
